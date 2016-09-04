@@ -13,6 +13,15 @@
 		E2B49FAD1D7B625F00297B57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B49FAC1D7B625F00297B57 /* Assets.xcassets */; };
 		E2B49FB01D7B625F00297B57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B49FAE1D7B625F00297B57 /* LaunchScreen.storyboard */; };
 		E2B49FBB1D7B625F00297B57 /* DependencyInjectionByProtocolExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B49FBA1D7B625F00297B57 /* DependencyInjectionByProtocolExampleTests.swift */; };
+		E2B49FC71D7B62E000297B57 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B49FC61D7B62E000297B57 /* Service.swift */; };
+		E2B49FC91D7B63D100297B57 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B49FC81D7B63D100297B57 /* Dependencies.swift */; };
+		E2B49FCB1D7B64A900297B57 /* Environment_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B49FCA1D7B64A900297B57 /* Environment_App.swift */; };
+		E2B49FCE1D7B6B6E00297B57 /* Environment_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B49FCC1D7B6B6A00297B57 /* Environment_Test.swift */; };
+		E2B49FCF1D7B6B7100297B57 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B49FC61D7B62E000297B57 /* Service.swift */; };
+		E2B49FD01D7B6B8100297B57 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B49FC81D7B63D100297B57 /* Dependencies.swift */; };
+		E2B49FD21D7B6DCB00297B57 /* Dependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B49FD11D7B6DCB00297B57 /* Dependent.swift */; };
+		E2B49FD31D7B6DCE00297B57 /* Dependent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B49FD11D7B6DCB00297B57 /* Dependent.swift */; };
+		E2B49FD41D7B93B000297B57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B49FA71D7B625F00297B57 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,11 @@
 		E2B49FB61D7B625F00297B57 /* DependencyInjectionByProtocolExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DependencyInjectionByProtocolExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B49FBA1D7B625F00297B57 /* DependencyInjectionByProtocolExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionByProtocolExampleTests.swift; sourceTree = "<group>"; };
 		E2B49FBC1D7B625F00297B57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2B49FC61D7B62E000297B57 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		E2B49FC81D7B63D100297B57 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		E2B49FCA1D7B64A900297B57 /* Environment_App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment_App.swift; sourceTree = "<group>"; };
+		E2B49FCC1D7B6B6A00297B57 /* Environment_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment_Test.swift; sourceTree = "<group>"; };
+		E2B49FD11D7B6DCB00297B57 /* Dependent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +97,11 @@
 				E2B49FAC1D7B625F00297B57 /* Assets.xcassets */,
 				E2B49FAE1D7B625F00297B57 /* LaunchScreen.storyboard */,
 				E2B49FB11D7B625F00297B57 /* Info.plist */,
+				E2B49FC61D7B62E000297B57 /* Service.swift */,
+				E2B49FC81D7B63D100297B57 /* Dependencies.swift */,
+				E2B49FCA1D7B64A900297B57 /* Environment_App.swift */,
+				E2B49FCC1D7B6B6A00297B57 /* Environment_Test.swift */,
+				E2B49FD11D7B6DCB00297B57 /* Dependent.swift */,
 			);
 			path = DependencyInjectionByProtocolExample;
 			sourceTree = "<group>";
@@ -198,7 +217,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2B49FA81D7B625F00297B57 /* ViewController.swift in Sources */,
+				E2B49FC91D7B63D100297B57 /* Dependencies.swift in Sources */,
 				E2B49FA61D7B625F00297B57 /* AppDelegate.swift in Sources */,
+				E2B49FC71D7B62E000297B57 /* Service.swift in Sources */,
+				E2B49FCB1D7B64A900297B57 /* Environment_App.swift in Sources */,
+				E2B49FD21D7B6DCB00297B57 /* Dependent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B49FD41D7B93B000297B57 /* ViewController.swift in Sources */,
 				E2B49FBB1D7B625F00297B57 /* DependencyInjectionByProtocolExampleTests.swift in Sources */,
+				E2B49FD01D7B6B8100297B57 /* Dependencies.swift in Sources */,
+				E2B49FCE1D7B6B6E00297B57 /* Environment_Test.swift in Sources */,
+				E2B49FCF1D7B6B7100297B57 /* Service.swift in Sources */,
+				E2B49FD31D7B6DCE00297B57 /* Dependent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
