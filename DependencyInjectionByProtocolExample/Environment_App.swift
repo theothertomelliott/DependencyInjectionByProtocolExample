@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Stores singleton instances of our dependencies
 class AppEnvironment: NSObject {
     
     static var _service: AppService = AppService()
@@ -19,6 +20,7 @@ class AppEnvironment: NSObject {
     
 }
 
+// Provides a factory function for obtaining a Service instance in the application
 extension ServiceDependency {
     static func _service() -> Service { return AppEnvironment.service }
 }

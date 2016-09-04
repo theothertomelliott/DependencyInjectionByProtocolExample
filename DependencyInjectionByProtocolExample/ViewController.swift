@@ -10,25 +10,29 @@ import UIKit
 
 class ViewController: UIViewController, ServiceDependency {
 
-    @IBOutlet var serviceName: UILabel?
-
+    // Store our service instance here, rather than call the "factory" every time
     var service: Service
     
+    // Somewhere to display the name returned by our service instance
+    @IBOutlet var serviceName: UILabel?
+    
+    // Initializers for the app, using property injection
     required init?(coder aDecoder: NSCoder) {
-        service = Dependent._service()
+        service = ViewController._service()
         super.init(coder: aDecoder)
     }
-    
     override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
-        service = Dependent._service()
+        service = ViewController._service()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
+    // Initializer for testing, using initializer injection
     init(service: Service) {
         self.service = service
         super.init(nibName: nil, bundle: nil)
     }
     
+    // Populate our label
     override func viewDidLoad() {
         super.viewDidLoad()
         serviceName?.text = service.name()

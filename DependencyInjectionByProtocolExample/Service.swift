@@ -8,10 +8,12 @@
 
 import UIKit
 
+// Simple service protocol
 protocol Service {
     func name() ->  String
 }
 
+// Service identified as for use in the application itself
 class AppService: Service {
 
     func name() -> String {
