@@ -21,12 +21,3 @@ class DependencyInjectionByProtocolExampleTests: XCTestCase {
     }
     
 }
-
-// Test-specific Service
-class TestService: Service {
-    
-    func name() -> String {
-        return "Test"
-    }
-    
-}

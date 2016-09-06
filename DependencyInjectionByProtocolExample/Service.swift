@@ -21,3 +21,12 @@ class AppService: Service {
     }
     
 }
+
+// Test-specific Service
+class TestService: Service {
+    
+    func name() -> String {
+        return "Test"
+    }
+    
+}
