@@ -18,17 +18,17 @@ class ViewController: UIViewController, ServiceDependency {
     
     // Initializers for the app, using property injection
     required init?(coder aDecoder: NSCoder) {
-        service = ViewController._service()
+        service = ViewController.defaultService()
         super.init(coder: aDecoder)
     }
     override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
-        service = ViewController._service()
+        service = ViewController.defaultService()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
     // Initializer for testing, using initializer injection
-    init(service: Service) {
-        self.service = service
+    init(serviceCreator: ServiceCreator = ViewController.defaultService) {
+        self.service = serviceCreator()
         super.init(nibName: nil, bundle: nil)
     }
     

@@ -11,9 +11,9 @@ import XCTest
 
 class DependencyInjectionByProtocolExampleTests: XCTestCase {
 
-    // Verify that initializer injection can be used without triggering property injection
+    // Verify that initializer injection can be used without triggering the default
     func testInitInjection() {
-        let vc = ViewController(service: TestService())
+        let vc = ViewController(serviceCreator: { ServiceCreator in return TestService() } )
         vc.serviceName = UILabel()
         vc.viewDidLoad()
         

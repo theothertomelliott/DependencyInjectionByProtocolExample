@@ -22,5 +22,5 @@ class AppEnvironment: NSObject {
 
 // Provides a factory function for obtaining a Service instance in the application
 extension ServiceDependency {
-    static func _service() -> Service { return AppEnvironment.service }
+    static func defaultService() -> Service { return AppEnvironment.service }
 }

@@ -10,5 +10,5 @@ import UIKit
 
 // Crash if a test tries to use the default ServiceDependency factory function
 extension ServiceDependency {
-    static func _service() -> Service { fatalError() }
+    static func defaultService() -> Service { fatalError() }
 }

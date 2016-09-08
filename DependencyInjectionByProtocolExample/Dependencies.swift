@@ -7,4 +7,9 @@
 //
 
 // Marks a class as having a dependency on a Service instance
-protocol ServiceDependency {}
+protocol ServiceDependency {
+    static func defaultService() -> Service
+}
+
+// Function to create a new Service instance
+typealias ServiceCreator = () -> Service
